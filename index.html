@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avdua</title>
-  <link rel="icon" href="images/logo.ico" type="image/x-icon"/>
+  <link rel="icon" href="images/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <div class="wrapper">
 
-    <div class="loading">
+  <!-- <div class="loading">
       <div class="loading__inner">
         <div class="loading-text">
           <span class="loading-text-words">L</span>
@@ -29,50 +28,112 @@
         CLICK HERE
       </button>
       </div>
+    </div> -->
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item menu__item--logo">
+            <a href="#" class="logo">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Про нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Контакти</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">ENG</a>
+          </li>
+          <li class="menu__item menu__item--music">
+            <a class="menu__item-link--music" href="#">
+              <img class="menu__music" src="images/music-btn.svg" alt="music">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__inner">
+
+      <div class="slider">
+
+        <section class="initial-section slider__section">
+          <video src="videos/video-1.mp4" type="video/mp4" autoplay muted loop></video>
+          <div class="container">
+            <div class="initial-section__inner">
+              <div class="section__title-block">
+                <h1 class="initial__title section__title">
+                  Компанія <br>
+                  «Аграрний Виробничий Дім України»
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="growing-section slider__section">
+          <video src="videos/video-2.mp4" type="video/mp4" autoplay muted loop></video>
+          <div class="container">
+            <div class="growing-section__inner ">
+              <div class="section__title-block">
+                <h2 class="initial__title section__title">
+                  Вирощування сільськогосподарської <br>
+                  продукції
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="accumulation-section slider__section">
+          <video src="videos/video-3.mp4" type="video/mp4" autoplay muted loop></video>
+          <div class="container">
+            <div class="accumulation-section__inner">
+              <div class="section__title-block">
+                <h2 class="initial__title section__title">
+                  Погрузка
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="export-section slider__section">
+          <video src="videos/video-4.mp4" type="video/mp4" autoplay muted loop></video>
+          <div class="container">
+            <div class="export-section__inner">
+              <div class="section__title-block">
+                <h2 class="initial__title section__title">
+                  Накопичення та доопрацювання
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="loading-section slider__section">
+          <video src="videos/video-5.mp4" type="video/mp4" autoplay muted loop></video>
+          <div class="container">
+            <div class="loading-section__inner">
+              <div class="section__title-block">
+                <h2 class="initial__title section__title">
+                  Відвантаження експорту
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
-    <main class="main">
-      <header class="header">
-        <div class="container">
-          <nav class="nav">
-            <ul class="menu">
-              <li class="menu__item menu__item--logo">
-                <a href="#" class="logo">
-                  <img class="logo__img" src="images/logo.svg" alt="logo">
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item-link" href="#">Про нас</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item-link" href="#">Контакти</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item-link" href="#">ENG</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__item-link" href="#">
-                  <img class="menu__music" src="images/music-btn.svg" alt="music">
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+
+  </main>
 
 
-
-
-
-
-
-    </main>
-    <footer class="footer">
-
-      ©ALL RIGHTS RESERVED 
-
-    </footer>
-  </div>
+  <footer class="footer">
+    ©ALL RIGHTS RESERVED
+  </footer>
 
   <script src="js/main.min.js"></script>
 </body>
