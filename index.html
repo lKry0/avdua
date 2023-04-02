@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avdua</title>
-  <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+  <link rel="icon" href="images/icon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-<!-- <div class="loading">
+  <div class="loading">
       <div class="loading__inner">
         <div class="loading-text">
           <span class="loading-text-words">L</span>
@@ -28,7 +28,7 @@
         CLICK HERE
       </button>
       </div>
-    </div>-->
+    </div>
 
   <header class="header">
     <div class="container">
@@ -39,6 +39,7 @@
               <img class="logo__img" src="images/logo.svg" alt="logo">
             </a>
           </li>
+          
           <li class="menu__item menu__item--about">
             <a class="menu__item-link menu__item-link--about" href="#">Про нас</a>
           </li>
@@ -48,6 +49,7 @@
           <li class="menu__item menu__item--langue">
             <a class="menu__item-link" href="#">ENG</a>
           </li>
+
           <li class="menu__item menu__item--music">
             <a class="menu__item-link--music" href="#">
                 <div class='menu__music'>
@@ -63,7 +65,10 @@
       </nav>
     </div>
   </header>
+
   <main class="main">
+
+    
     <div class="main__inner">
       <div class="contacts">
         <div class="contacts__wrapper">
@@ -73,8 +78,8 @@
           <div class="container">
             <div class="contacts__inner">
               <div class="contacts__content">
-                <div class="contacts__item">
-                  <div class="contacts__item-title">
+                <div class="contacts__item contacts__item--first">
+                  <div class="contacts__item-title contacts__item-title--adress">
                     АДРЕСА :
                   </div>
                   <a class="contacts__item-link" href="https://goo.gl/maps/GJwDef1p6RERKMQt7" target="_blank">
@@ -82,8 +87,8 @@
                   </a>
                   </ul>
                 </div>
-                <div class="contacts__item">
-                  <div class="contacts__item-title">
+                <div class="contacts__item contacts__item--second">
+                  <div class="contacts__item-title contacts__item-title--tel">
                     ТЕЛЕФОН:
                   </div>
                   <a class="contacts__item-link" href="tel:+380443382526">
@@ -92,7 +97,7 @@
                   </ul>
                 </div>
                 <div class="contacts__item contacts__item--last">
-                  <div class="contacts__item-title">
+                  <div class="contacts__item-title contacts__item-title--mail">
                     E-MAIL :
                   </div>
                   <a class="contacts__item-link" href="mailto:office@avdua.com.ua">
@@ -107,7 +112,7 @@
                 </div>
               </div>
               <div class="close-button-box">
-                <a href="#" class="close-button">
+                <div class="close-button">
                   <div class="in">
                     <div class="close-button-block"></div>
                     <div class="close-button-block"></div>
@@ -116,7 +121,7 @@
                     <div class="close-button-block"></div>
                     <div class="close-button-block"></div>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -189,7 +194,7 @@
               </div>
 
               <div class="close-button-box close-button-box--about">
-                <a href="#" class="close-button">
+                <div class="close-button">
                   <div class="in">
                     <div class="close-button-block"></div>
                     <div class="close-button-block"></div>
@@ -198,7 +203,7 @@
                     <div class="close-button-block"></div>
                     <div class="close-button-block"></div>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -206,7 +211,8 @@
       </div>
 
       <div class="slider">
-        <section class="initial-section slider__section">
+
+        <section class="initial-section slider__section" data-index="0">
           <video src="videos/video-1.mp4" type="video/mp4" autoplay muted loop></video>
           <div class="container">
             <div class="initial-section__inner">
@@ -215,13 +221,13 @@
                   Компанія <br>
                   «Аграрний Виробничий Дім України»
                 </h1>
-                <div class="section__title-line">
+                <div class="initial__title-line section__title-line">
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="growing-section slider__section">
+        <section class="growing-section slider__section" data-index="1">
           <video src="videos/video-2.mp4" type="video/mp4" autoplay muted loop></video>
           <div class="container">
             <div class="growing-section__inner ">
@@ -230,13 +236,13 @@
                   Вирощування сільськогосподарської <br>
                   продукції
                 </h3>
-                <div class="section__title-line">
+                <div class="growing__title-line section__title-line">
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="accumulation-section slider__section">
+        <section class="accumulation-section slider__section" data-index="2">
           <video src="videos/video-3.mp4" type="video/mp4" autoplay muted loop></video>
           <div class="container">
             <div class="accumulation-section__inner">
@@ -244,13 +250,13 @@
                 <h3 class="accumulation__title section__title">
                   Погрузка
                 </h3>
-                <div class="section__title-line">
+                <div class="accumulation__title-line section__title-line">
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="export-section slider__section">
+        <section class="export-section slider__section" data-index="3">
           <video src="videos/video-4.mp4" type="video/mp4" autoplay muted loop></video>
           <div class="container">
             <div class="export-section__inner">
@@ -258,13 +264,13 @@
                 <h3 class="export__title section__title">
                   Накопичення та доопрацювання
                 </h3>
-                <div class="section__title-line">
+                <div class="export__title-line section__title-line ">
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="loading-section slider__section">
+        <section class="loading-section slider__section" data-index="3">
           <video src="videos/video-5.mp4" type="video/mp4" autoplay muted loop></video>
           <div class="container">
             <div class="loading-section__inner">
@@ -272,7 +278,7 @@
                 <h3 class="loading__title section__title">
                   Відвантаження експорту
                 </h3>
-                <div class="section__title-line">
+                <div class="loading__title-line section__title-line">
                 </div>
               </div>
             </div>
